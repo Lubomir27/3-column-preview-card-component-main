@@ -1,0 +1,131 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html, body {
+	height: 100%;
+	background: hsl(0, 0%, 95%);
+}
+
+.container{
+	color:#fff;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	padding: 8em;
+}
+section {
+	width:33.33333%;
+	padding: 2em;
+	line-height: 1.5em;
+	min-height: 30.6em;
+
+}
+section h1{
+	font-family: "Big Shoulders Display", cursive;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	font-size:300%;
+	letter-spacing: 0.66px;
+	text-transform: uppercase;
+	padding: 0.21666666666666667em 0.21666666666666667em  0.6666666666666666em 0.21666666666666667em;
+	
+}
+
+section img{
+	width:28%;
+	height: auto;
+	margin: 1.5em 0.5em;
+}
+
+section p {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 700;
+	color:hsla(0, 0%, 100%, 0.75);
+	font-size:  0.85em;
+	padding:0.9411764705882353em 0.9411764705882353em 5.882352941176471em 0.9411764705882353em;
+	letter-spacing: 0.075em;
+}
+
+section a{
+	display: block;
+	width: 68%;
+	font-size: 100%;
+	text-decoration: none;
+	text-align:center;
+	margin-left: 0.4em;
+}
+
+.sedan {
+	background: #e28525;
+	border-radius: 5% 0 0 5%;
+}
+
+.sedan a {
+	color: #e28525;
+	background: #fff;
+	padding: 1em 2em;
+	border-radius: 15% / 50%;
+}
+.suv {
+	background: #016972;
+}
+
+.suv a {
+	color: #016972;
+	background: #fff;
+	padding: 1em 2em;
+	border-radius: 15% / 50%;
+}
+.luxury {
+	background: #00403f;
+	border-radius: 0 5% 5% 0;
+}
+
+.luxury a {
+	color: #00403f;
+	background: #fff;
+	padding: 1em 2em;
+	border-radius: 15% / 50%;
+}
+
+section a:hover{
+	background: transparent;
+	cursor: pointer;
+	color:#fff;
+	border:3px solid #fff;
+}
+@media only screen and (max-width: 1395px){
+	.luxury p{
+		padding-bottom: 4.176470588235294em;
+	}
+}
+
+@media only screen and (max-width: 375px){
+
+	body{
+		font-size:15px;
+	}
+	.container{
+		flex-direction: column;
+		padding:1em;
+	}
+	section:first-child{
+		border-radius: 5% 5% 0 0;
+	}
+	section:last-child{
+		border-radius: 0 0 5% 5%;
+	}
+	section p{
+		padding:0.7em 0.7em 3em 0.7em;
+	}
+	section{
+		align-content: stretch;
+		width:100%;
+		min-height: 0;
+	}
+}
