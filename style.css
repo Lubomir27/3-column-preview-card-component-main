@@ -12,6 +12,8 @@ html, body {
 }
 
 .container{
+	margin:0 auto;
+	max-width:1420px;
 	color:#fff;
 	display: flex;
 	align-items: stretch;
@@ -52,11 +54,12 @@ section p {
 }
 
 section a{
+	padding: 1em 2em;
 	display: block;
 	width: 68%;
 	font-size: 100%;
 	text-decoration: none;
-	text-align:center;
+	text-align: center;
 	margin-left: 0.4em;
 }
 
@@ -68,7 +71,6 @@ section a{
 .sedan a {
 	color: #e28525;
 	background: #fff;
-	padding: 1em 2em;
 	border-radius: 15% / 50%;
 }
 .suv {
@@ -78,7 +80,6 @@ section a{
 .suv a {
 	color: #016972;
 	background: #fff;
-	padding: 1em 2em;
 	border-radius: 15% / 50%;
 }
 .luxury {
@@ -89,7 +90,6 @@ section a{
 .luxury a {
 	color: #00403f;
 	background: #fff;
-	padding: 1em 2em;
 	border-radius: 15% / 50%;
 }
 
@@ -99,18 +99,13 @@ section a:hover{
 	color:#fff;
 	border:3px solid #fff;
 }
-@media only screen and (max-width: 1395px){
-	.luxury p{
-		padding-bottom: 4.176470588235294em;
-	}
-}
-
-@media only screen and (max-width: 375px){
-
+@media only screen and (min-width: 375px) and (max-width: 1420px) {
+	
 	body{
 		font-size:15px;
 	}
 	.container{
+		max-width:375px;
 		flex-direction: column;
 		padding:1em;
 	}
@@ -128,4 +123,9 @@ section a:hover{
 		width:100%;
 		min-height: 0;
 	}
+}
+
+@media only screen and (max-width: 375px){
+
+	
 }
