@@ -54,6 +54,7 @@ section p {
 }
 
 section a{
+	background: #fff;
 	padding: 1em 2em;
 	display: block;
 	width: 68%;
@@ -70,7 +71,6 @@ section a{
 
 .sedan a {
 	color: #e28525;
-	background: #fff;
 	border-radius: 15% / 50%;
 }
 .suv {
@@ -79,7 +79,6 @@ section a{
 
 .suv a {
 	color: #016972;
-	background: #fff;
 	border-radius: 15% / 50%;
 }
 .luxury {
@@ -89,7 +88,6 @@ section a{
 
 .luxury a {
 	color: #00403f;
-	background: #fff;
 	border-radius: 15% / 50%;
 }
 
@@ -99,6 +97,7 @@ section a:hover{
 	color:#fff;
 	border:3px solid #fff;
 }
+
 @media only screen and (min-width: 375px) and (max-width: 1420px) {
 	
 	body{
@@ -109,6 +108,11 @@ section a:hover{
 		flex-direction: column;
 		padding:1em;
 	}
+	section{
+		align-content: stretch;
+		width:100%;
+		min-height: 0;
+	}
 	section:first-child{
 		border-radius: 5% 5% 0 0;
 	}
@@ -118,14 +122,5 @@ section a:hover{
 	section p{
 		padding:0.7em 0.7em 3em 0.7em;
 	}
-	section{
-		align-content: stretch;
-		width:100%;
-		min-height: 0;
-	}
-}
 
-@media only screen and (max-width: 375px){
-
-	
 }
