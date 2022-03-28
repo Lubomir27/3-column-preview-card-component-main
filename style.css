@@ -20,13 +20,14 @@ html, body {
 	justify-content: center;
 	padding: 8em;
 }
+
 section {
 	width:33.33333%;
 	padding: 2em;
 	line-height: 1.5em;
 	min-height: 30.6em;
-
 }
+
 section h1{
 	font-family: "Big Shoulders Display", cursive;
 	-webkit-font-smoothing: antialiased;
@@ -73,6 +74,7 @@ section a{
 	color: #e28525;
 	border-radius: 15% / 50%;
 }
+
 .suv {
 	background: #016972;
 }
@@ -81,6 +83,7 @@ section a{
 	color: #016972;
 	border-radius: 15% / 50%;
 }
+
 .luxury {
 	background: #00403f;
 	border-radius: 0 5% 5% 0;
